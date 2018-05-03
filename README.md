@@ -1,0 +1,2 @@
+# lib-architecture
+基于google最新架构组件Architecture Components进行封装
