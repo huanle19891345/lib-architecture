@@ -11,7 +11,7 @@ public class ViewModelUtil {
      *
      * @param baseViewModel
      */
-    public static void observeDataError(LifecycleOwner owner, BaseViewModel baseViewModel, Observer<String> observer) {
+    public static void observeDataError(BaseViewModel baseViewModel, LifecycleOwner owner, Observer<String> observer) {
         baseViewModel.getDataErrorObserver().observe(owner, observer);
     }
 

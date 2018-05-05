@@ -2,6 +2,9 @@ package com.pince.demo
 
 import android.arch.lifecycle.LifecycleOwner
 import android.arch.lifecycle.Observer
+import android.arch.lifecycle.ViewModel
+import android.arch.lifecycle.ViewModelProviders
+import android.support.v4.app.FragmentActivity
 import com.pince.architecture.BaseViewModel
 
 
@@ -36,4 +39,8 @@ fun BaseViewModel.observeDataError(owner: LifecycleOwner, observer: Observer<Str
 fun BaseViewModel.observeDataEmpty(owner: LifecycleOwner, observer: Observer<Boolean>): BaseViewModel {
     dataEmptyObserver.observe(owner, observer);
     return this;
+}
+
+fun <T: ViewModel> FragmentActivity.getViewModel(modelClass: Class<T>): T {
+    return ViewModelProviders.of(this).get(modelClass)
 }

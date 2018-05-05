@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pince.demo.MainKotlinActivity">
+    tools:context="com.pince.demo.SecondJavaActivity">
 
 
     <TextView
@@ -25,7 +25,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:text="mainActivity--use kotlin"
+        android:text="secondActivity--use java"
         app:layout_constraintBottom_toTopOf="@+id/tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
