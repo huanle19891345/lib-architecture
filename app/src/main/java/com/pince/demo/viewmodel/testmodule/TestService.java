@@ -1,6 +1,6 @@
-package com.pince.architecture.viewmodel.test;
+package com.pince.demo.viewmodel.testmodule;
 
-import com.pince.architecture.model.test.TestModel;
+import com.pince.demo.model.testmodule.TestModel;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;

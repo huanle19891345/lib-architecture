@@ -1,24 +1,17 @@
-package com.pince.architecture.viewmodel.test
+package com.pince.demo.viewmodel.testmodule
 
 import android.app.Application
-import android.arch.lifecycle.AndroidViewModel
 import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
 import android.util.Log
-
-import com.pince.architecture.model.test.TestModel
-import com.pince.architecture.viewmodel.BaseViewModel
+import com.pince.architecture.BaseViewModel
+import com.pince.demo.model.testmodule.TestModel
 import com.pince.network.RetrofitManager
-
-import io.reactivex.disposables.Disposable
-import io.reactivex.functions.Consumer
-import com.pince.architecture.*
 
 
 /**
  * 以api网络接口中确定的功能模块进行划分，一个功能模块对应一个Service，对应一个具体的ViewModel
  */
-class TestViewModel(application: Application) : AndroidViewModel(application) {
+class TestViewModel(application: Application) : BaseViewModel(application) {
 
     private val mTestModel: MutableLiveData<TestModel>
     private val mTestService: TestService

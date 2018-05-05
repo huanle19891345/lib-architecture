@@ -1,4 +1,4 @@
-package com.pince.architecture;
+package com.pince.demo;
 
 import android.app.Application;
 

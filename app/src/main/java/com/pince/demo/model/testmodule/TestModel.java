@@ -1,4 +1,4 @@
-package com.pince.architecture.model.test;
+package com.pince.demo.model.testmodule;
 
 
 /**
